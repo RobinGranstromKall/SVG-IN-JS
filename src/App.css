@@ -1,0 +1,44 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100dvh;
+}
+
+p {
+  margin: 1rem auto 0;
+}
+.navlink {
+  border: 1px solid black;
+  padding: 1rem 2rem;
+}
+
+@keyframes arrowToXLeft {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translate(25%, -25%) rotate(0.25turn);
+  }
+}
+
+.arrowToXLeft {
+  transform-origin: 25% 75%;
+  animation: arrowToXLeft 1s ease-in-out forwards;
+}
+
+@keyframes arrowToXRight {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translate(-25%, -25%) rotate(-0.25turn);
+  }
+}
+
+.arrowToXRight {
+  transform-origin: 75% 75%;
+  animation: arrowToXRight 1s ease-in-out forwards;
+}
